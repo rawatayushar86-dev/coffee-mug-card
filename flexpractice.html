@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #wrapper{
+        height: 100vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        perspective: 10px;
+    }
+    .container{
+        position: relative;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform-style: preserve-3d;
+        z-index: -1;
+    }
+      .background{
+        transform: translateZ(-40px) scale(6);
+       
+    }
+    .foreground{
+        transform: translateZ(-20px) scale(2);
+       
+    }
+   
+     .background ,.foreground{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        z-index: -1;
+     
+    }
+       
+    h1{
+        position: relative;
+        top: 5rem;
+        font-size: 10rem;
+        letter-spacing: 4px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        text-shadow: 0 0 10px rgba(0,0,0,0.3);
+        z-index: -1;
+    }
+    section{
+        background-color: rgb(45,45,45);
+        color: white;
+        padding: 5rem 0;
+
+
+    }
+    .description{
+        position: absolute;
+        background-color: white;
+        padding: 0.5rem 2.5rem;
+        top:50%;
+        left: 50%; 
+        transform: translateX(-50%) translateY(-50%);
+        color: black;
+        font-size: 3.5rem;
+        font-weight: 600;
+    }
+    .bg1{
+        background-image: url(https://imgs.search.brave.com/eZDdXLFlJLCfr8vgTdE5x4RUTGq5zKYPVotRBjkJzb0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTI4/MTc1NjIyMi9waG90/by9wb3YtbW91bnRh/aW4tYmlraW5nLWZh/bWlseS1yaWRpbmct/b24tZm9yZXN0LXRy/YWlsLmpwZz9zPTYx/Mng2MTImdz0wJms9/MjAmYz1TWnFUUk9i/ajJQUmU4TFdfb3FZ/azRIOGlxMXdWS19F/UUwwQi1UVWZCU19B/PQ);
+    }
+    .bg2{
+        background-image: url(https://imgs.search.brave.com/IitG7o-I3i05Gwf4kupYO5pqITi3IkD11snpkCVnh58/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/dHJhdmVsYmlyYmls/bGluZy5jb20vd3At/Y29udGVudC91cGxv/YWRzL2ZseS1iaWxs/aW5nLWFuZC1Cb29r/aW5nLW9mLVBhcmFn/bGlkaW5nLndlYnA);
+    }
+    .bg3{
+        background-image: url(https://imgs.search.brave.com/05YiUgCOXebpVUs2zs1nbpFM2IQfCldGQ9-6wGFZn54/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMjE2/MzgxNzQxOC9waG90/by90b3BzaG90LWJy/YXppbHMtZ2Ficmll/bC1tZWRpbmEtcmVh/Y3RzLWFmdGVyLWdl/dHRpbmctYS1sYXJn/ZS13YXZlLWluLXRo/ZS01dGgtaGVhdC1v/Zi10aGUtbWVucy5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/b014amxVdlNHQUto/YU5pV1B3aVIyMUtE/VnlnMm0yRjZQMkpz/N0VZaUY3ND0);
+    }
+
+    .secheading{
+        font-size: 5rem;
+        padding: 0 10;
+
+    }
+    .text{
+        font-size: 1.5rem;
+        padding: 0 10rem;
+        margin: 5rem 0 ;
+    }
+    .bg{
+        position: relative;
+        width: 100%;
+        background-attachment: fixed;
+       
+        background-size: cover;
+        background-position: center;
+         height: 500px;
+
+    }
+ 
+    </style>
+<body>
+    <div id="wrapper">
+        <div class="container">
+            <img  src="https://codehelp-parallax-website.netlify.app/assets/foreground.png" class="foreground" >
+            <img src="https://imgs.search.brave.com/mYBhv3SK7Hs_2TI-32A8HMNQfZnptlVD6HKsIO7oHLQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMjkv/NDk5LzMwNC9zbWFs/bC9haS1nZW5lcmF0/ZWQtYWktZ2VuZXJh/dGl2ZS1zbm93LWlj/ZS1mYWRlZC1tb3Vu/dGFpbi1oaWxsLXBl/YWstbmF0dXJlLW91/dGRvb3ItbGFuZHNj/YXBlLWJhY2tncm91/bmQtZ3JhcGhpYy1h/cnQtcGhvdG8uanBn" class="background">
+            <h1>ADVENTURE</h1>
+        </div>
+    <section>
+        <h2 class="secheading" > ADVENTURE TIME!</h2>
+        <p class="text"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui necessitatibus commodi alias? Veritatis, eligendi nisi. Amet exercitationem, recusandae dolore corrupti laborum aperiam repellendus natus voluptatem quam atque aliquam beatae. Odit deserunt nisi optio eveniet? Aliquam possimus molestiae, ullam illum accusamus autem accusantium! Voluptate laboriosam eum saepe ex veritatis est? Numquam eaque autem labore provident dolorum, velit omnis mollitia eos adipisci!
+        <br> <br> 
+        
+            
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, itaque hic tempore rem eveniet sed repudiandae molestiae magnam aut quod consequatur, harum, totam beatae fugiat ipsam? Explicabo, blanditiis quod similique fugiat fugit ea expedita deleniti doloribus, delectus perferendis, tempore amet maiores libero sapiente voluptatem reprehenderit? Illum alias commodi cupiditate corporis mollitia ab quaerat, ipsum est excepturi vitae a sunt optio.
+
+
+        </p>
+        <div class="bg bg1">
+            <h2 class="description"> BIKING</h2>
+        </div>
+        <p class="text"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui necessitatibus commodi alias? Veritatis, eligendi nisi. Amet exercitationem, recusandae dolore corrupti laborum aperiam repellendus natus voluptatem quam atque aliquam beatae. Odit deserunt nisi optio eveniet? Aliquam possimus molestiae, ullam illum accusamus autem accusantium! Voluptate laboriosam eum saepe ex veritatis est? Numquam eaque autem labore provident dolorum, velit omnis mollitia eos adipisci!
+        <br> <br> 
+        
+            
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, itaque hic tempore rem eveniet sed repudiandae molestiae magnam aut quod consequatur, harum, totam beatae fugiat ipsam? Explicabo, blanditiis quod similique fugiat fugit ea expedita deleniti doloribus, delectus perferendis, tempore amet maiores libero sapiente voluptatem reprehenderit? Illum alias commodi cupiditate corporis mollitia ab quaerat, ipsum est excepturi vitae a sunt optio.
+
+
+        </p>
+
+          <div class="bg bg2">
+            <h2 class="description"> PARAGLIDING</h2>
+        </div>
+        <p class="text"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui necessitatibus commodi alias? Veritatis, eligendi nisi. Amet exercitationem, recusandae dolore corrupti laborum aperiam repellendus natus voluptatem quam atque aliquam beatae. Odit deserunt nisi optio eveniet? Aliquam possimus molestiae, ullam illum accusamus autem accusantium! Voluptate laboriosam eum saepe ex veritatis est? Numquam eaque autem labore provident dolorum, velit omnis mollitia eos adipisci!
+        <br> <br> 
+        
+            
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, itaque hic tempore rem eveniet sed repudiandae molestiae magnam aut quod consequatur, harum, totam beatae fugiat ipsam? Explicabo, blanditiis quod similique fugiat fugit ea expedita deleniti doloribus, delectus perferendis, tempore amet maiores libero sapiente voluptatem reprehenderit? Illum alias commodi cupiditate corporis mollitia ab quaerat, ipsum est excepturi vitae a sunt optio.
+
+
+        </p>
+
+          <div class="bg bg3">
+            <h2 class="description"> SURFING</h2>
+        </div>
+        <p class="text"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui necessitatibus commodi alias? Veritatis, eligendi nisi. Amet exercitationem, recusandae dolore corrupti laborum aperiam repellendus natus voluptatem quam atque aliquam beatae. Odit deserunt nisi optio eveniet? Aliquam possimus molestiae, ullam illum accusamus autem accusantium! Voluptate laboriosam eum saepe ex veritatis est? Numquam eaque autem labore provident dolorum, velit omnis mollitia eos adipisci!
+        <br> <br> 
+        
+            
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, itaque hic tempore rem eveniet sed repudiandae molestiae magnam aut quod consequatur, harum, totam beatae fugiat ipsam? Explicabo, blanditiis quod similique fugiat fugit ea expedita deleniti doloribus, delectus perferendis, tempore amet maiores libero sapiente voluptatem reprehenderit? Illum alias commodi cupiditate corporis mollitia ab quaerat, ipsum est excepturi vitae a sunt optio.
+
+
+        </p>
+      </section>
+   </div>
+</body>
+</html>
