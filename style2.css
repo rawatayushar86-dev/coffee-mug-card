@@ -19,6 +19,5 @@
     grid-column-end: 3;
 }
 #box3{
-    grid-row-start:2 ;
-    grid-row-end: 4;
+    grid-row: 2 4;
 }
