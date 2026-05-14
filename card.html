@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+    }
+    .wrapper{
+        overflow-x: hidden;
+        overflow-y: hidden;
+        height: 100vh;
+        padding: 70px;
+    }
+    
+    .card{
+        width: 370px;
+        height: 350px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px gray  ;
+        padding: 20px;
+    }
+    img{
+        width: 100%;
+        border-radius: 10px;
+    }
+    figcaption{
+        font-weight: bold;
+        font-size:25px;
+        margin-top: 9px;
+    }
+    .text{
+        margin-top: 15px;
+        font-size: large;
+
+    }
+    #hic{
+        font-size:medium;
+        font-weight: bold;
+        margin-left: 20px;
+        background-color:green;
+        padding: 5px;
+        border-radius: 5px;
+        color: white;
+    }
+    #hi{
+        color: blueviolet;
+        font-weight: bold;
+    }
+#hey{
+    color: gray;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 9px;
+    text-decoration: line-through;
+
+}
+</style>
+<body>
+    <div class="wrapper">
+        
+            <div class="card">
+            <figure>
+                <img
+                src="https://www.codehelp.in/_next/image?url=https%3A%2F%2Fcodehelp.s3.ap-south-1.amazonaws.com%2FWeb_Dev_670f900667.jpg&w=828&q=100">
+                <figcaption> Web Development Masters Course @dot Batch</figcaption>
+            </figure>
+            <hr style="margin-top: 10px;">
+
+            <div class="text">
+                <span id="hi"> $4500</span>
+                <span id="hey"> $6900
+                </span>
+                <span id="hic"> 42% off</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
